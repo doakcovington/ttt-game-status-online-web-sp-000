@@ -46,6 +46,7 @@ end
 
 #draw game method
 def draw?(board)
+  #returns true if board is full and game is not won 
   full?(board) && !won?(board)
 end
 
