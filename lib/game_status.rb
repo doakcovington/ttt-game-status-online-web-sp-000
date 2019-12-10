@@ -66,7 +66,7 @@ def over?(board)
   #if game is won or if board is full
   if won?(board) || full?(board)
     #return true
-    return false
+    return true
   end
 end
 
