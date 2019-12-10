@@ -64,7 +64,7 @@ end
 #game over method
 def over?(board)
   #if game is a draw or if game is won or if board is full
-  if draw?(board) || won?(board) || full?(board)
+  if won?(board) || full?(board)
     #return true
     return true
   end
@@ -74,7 +74,7 @@ end
 def winner(board)
   #if game is won
   if won?(board)
-    #return element at the zeroth index of winning combination 
+    #return element at the zeroth index of winning combination
     return board[won?(board)[0]]
   end
 end
