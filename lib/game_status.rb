@@ -46,19 +46,7 @@ end
 
 #draw game method
 def draw?(board)
-  #if board is full and game is not won
-  if full?(board) == true && won?(board) == false
-    #return true
-    return true
-  #else if board is not full and game is not won
-  elsif full?(board) == false && won?(board) == false
-    #return false
-    return false
-  #else if game is won
-  elsif won?(board) == true
-    #return false
-    return false
-  end
+  full?(board) && !won?(board)
 end
 
 #game over method
