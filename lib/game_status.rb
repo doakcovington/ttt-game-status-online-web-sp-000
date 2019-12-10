@@ -63,7 +63,7 @@ end
 
 #game over method
 def over?(board)
-  #if game is a draw or if game is won or if board is full
+  #if game is won or if board is full
   if won?(board) || full?(board)
     #return true
     return true
