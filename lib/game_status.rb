@@ -67,7 +67,7 @@ def over?(board)
   if won?(board) || full?(board)
     #return true
     return true
-  end
+  end\
 end
 
 #winner winner chicken dinner
